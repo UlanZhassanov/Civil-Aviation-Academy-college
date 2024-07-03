@@ -164,12 +164,12 @@ section {
 body {
     margin: 0;
     font-family: "Roboto Condensed", sans-serif !important;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #afb1b3;
+    background-color: #ff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -267,13 +267,13 @@ sup {
 }
 
 a {
-    color: #00249c;
+    color: #2f4993;
     text-decoration: none;
     background-color: transparent;
 }
 
 a:hover {
-    color: #00249c;
+    color: #2f4993;
     text-decoration: underline;
 }
 
@@ -454,11 +454,38 @@ output {
     display: inline-block;
 }
 
-summary {
+details {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+details > summary {
     display: list-item;
     cursor: pointer;
     padding-bottom: 5px;
+    background: #2f4993;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    transition: all 200ms ease-out;
+    margin-bottom: 0;
 }
+
+details[open] > summary {
+    margin-bottom: 20px;
+}
+
+details > summary + * {
+    transition: margin-bottom 200ms ease-out;
+}
+
+details[open] > summary + * {
+    margin-bottom: 20px;
+}
+
 
 template {
     display: none;
@@ -1875,16 +1902,18 @@ pre code {
     color: #212529;
 }
 
-.table th,
-.table td {
-    padding: 0.75rem;
+
+.table td,
+.table th{
+    padding: 0rem;
     vertical-align: top;
-    border-top: 1px solid #dee2e6;
+    border-top: 0px solid #dee2e6;
+    border-color: #999;
 }
 
 .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6;
+    /* border-bottom: 2px solid #dee2e6; */
 }
 
 .table tbody+tbody {
@@ -1902,7 +1931,7 @@ pre code {
 
 .table-bordered th,
 .table-bordered td {
-    border: 1px solid #dee2e6;
+    border: 1px solid #999;
 }
 
 .table-bordered thead th,
@@ -11085,7 +11114,6 @@ a.text-dark:focus {
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
-    line-height: 1;
 }
 
 .fa-lg {
@@ -17223,10 +17251,10 @@ readers do not read off random characters that represent icons */
 }
 
 #top-bar {
-    background: #00249c;
+    background: #2f4993;
     height: 130px;
     background: linear-gradient(to bottom,
-            #00249c 35px,
+            #2f4993 35px,
             #fff 35px 130px)no-repeat;
 }
 
@@ -17381,12 +17409,12 @@ header .logo2 img {
 }
 
 @media (min-width: 992px) {
-    .navbar {
+    /* .navbar {
         width: 100%;
         padding: 20px 20px !important;
         align-items: end;
-    }
-
+    } */
+/*
     .navbar .logo {
         font-size: 0.9375em;
         font-weight: 800;
@@ -17395,7 +17423,7 @@ header .logo2 img {
 
     #my_image {
         margin-left: 80px;
-    }
+    } */
 }
 
 #my_image {
@@ -17487,7 +17515,7 @@ header .logo2 img {
 }
 
 .sitenavigation li.nav-dropdown:hover>a {
-    background-color: #00249c !important;
+    background-color: #2f4993 !important;
     color: white;
 }
 
@@ -17516,7 +17544,7 @@ header .logo2 img {
 
 .sitenavigation li a:hover {
     border-bottom: 3px solid #c99e67;
-    background-color: #00249c !important;
+    background-color: #2f4993 !important;
     color: white;
 }
 
@@ -17767,7 +17795,7 @@ header .logo2 img {
 }
 
 footer {
-    background: #00249c;
+    background: #2f4993;
     color: white;
 }
 
@@ -17846,7 +17874,7 @@ footer .footer__info .info-block h4 {
 
 section#bottom-bar {
     padding: 0;
-    background: #00249c;
+    background: #2f4993;
 }
 
 section#bottom-bar .bottom-bar {
@@ -18568,7 +18596,7 @@ button.swiper-pagination-bullet {
 .swiper {
     width: 100%;
     height: calc(100vw / (1600 / 450));
-    border: 3px solid #00249c;
+    border: 3px solid #2f4993;
 }
 
 .swiper-slide {
@@ -18607,12 +18635,12 @@ button.swiper-pagination-bullet {
     background: #000000b3;
 }
 
-body {
+/* body {
     font-size: 16px;
-}
+} */
 
 a {
-    color: #00249c;
+    color: #2f4993;
 }
 
 section {
@@ -18666,7 +18694,7 @@ h2 {
 #pages a,
 #news a,
 #departments a {
-    color: #00249c ;
+    color: #2f4993 ;
     text-decoration: none;
     background-color: transparent;
 }
@@ -18749,7 +18777,7 @@ h4 {
 }
 
 .online-services {
-    border: 3px solid #00249c;
+    border: 3px solid #2f4993;
     height: 100%;
 }
 
@@ -18784,7 +18812,7 @@ h4 {
 }
 
 .online-services a:hover {
-    background: #00249c;
+    background: #2f4993;
     color: white;
 }
 
@@ -18873,7 +18901,7 @@ h4 {
 }
 
 /* #news {
-  background: #00249c;
+  background: #2f4993;
 } */
 
 #news h2 {
@@ -18934,7 +18962,7 @@ h4 {
     margin-bottom: 30px;
     box-shadow: 0px 0px 1px 1px white;
     transition: 0.5s all ease;
-    border-bottom: 4px solid #00249c;
+    border-bottom: 4px solid #2f4993;
     background: white;
 }
 
@@ -19137,7 +19165,7 @@ h4 {
 #pages .main-image__link :hover{
     /* opacity: 0;
   transform: scale(1.03, 1.03); */
-    background: #00249c82;
+    background: #2f499382;
 }
 
 
@@ -19315,9 +19343,9 @@ h4 {
     }
 }
 
-.row {
+/* .row {
     display: block;
-}
+} */
 
 .preview {
     display: flex;
@@ -19350,7 +19378,7 @@ h4 {
 }
 
 .preview__body .active {
-    background: #00249c;
+    background: #2f4993;
     color: white;
     border-bottom: 2px solid #a3812a;
     cursor: auto;
@@ -19363,7 +19391,7 @@ h4 {
     display: block;
     font-size: 24px;
     text-align: center;
-    border-bottom: 2px solid #00249c;
+    border-bottom: 2px solid #2f4993;
     background: #a3812a;
     transition: all linear 0.4s;
 }
@@ -19377,7 +19405,7 @@ h4 {
 }
 
 .preview__item:hover {
-    background: #00249c;
+    background: #2f4993;
     color: white;
     border-bottom: 2px solid #a3812a;
 }
@@ -19433,7 +19461,7 @@ h4 {
     #pages .news__preview {
         width: 100%;
         margin-bottom: 30px;
-        border-bottom: 4px solid #00249c;
+        border-bottom: 4px solid #2f4993;
     }
 
     #news .news__preview img,
@@ -19489,7 +19517,7 @@ h4 {
 #enrollee .enrollee {
     border: 15px double #ffffff;
     padding: calc(100vw / (1690 / 30));
-    background-color: #00249cab;
+    background-color: #2f4993ab;
 }
 
 #enrollee .enrollee form {
@@ -19506,7 +19534,7 @@ h4 {
     display: block;
     padding: calc(100vw / (1690 / 10)) calc(100vw / (1690 / 5));
     background: #ffffff;
-    color: #00249c;
+    color: #2f4993;
     font-weight: 600;
     font-size: calc(100vw / (1690 / 18));
 }
@@ -19771,7 +19799,7 @@ h4 {
 }
 
 #departments .col-md-4 .title:hover {
-    background: #00249c;
+    background: #2f4993;
 }
 
 #departments .col-md-4 .title h4 a {
@@ -19814,7 +19842,7 @@ h4 {
 /* Modal Content/Box */
 
 .modal-content {
-    background: #00249c !important;
+    background: #2f4993 !important;
     color: white;
     margin: 15% auto;
     /* 15% from the top and centered */
@@ -19856,7 +19884,8 @@ h4 {
 
 
 #counter {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/123123.png);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/123123.png); */
+    background-color:#2f4993;
     padding: 4.375em 0;
 }
 
@@ -19941,7 +19970,7 @@ h4 {
 
 
 .color {
-    color: #00249c;
+    color: #2f4993;
 }
 
 #main-slider {
@@ -20143,7 +20172,7 @@ h4 {
 
 #main-slider .owl-prev:hover,
 #main-slider .owl-next:hover {
-    background-color: #00249c;
+    background-color: #2f4993;
     color: darkgoldenrod;
 }
 
@@ -20264,7 +20293,7 @@ h4 {
     box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
     border-radius: 18px;
     border-bottom: 5px solid #fff;
-    border: 1px solid #00249c;
+    border: 1px solid #2f4993;
     width: 100%;
 }
 
@@ -20275,7 +20304,7 @@ h4 {
     box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
     border-radius: 18px;
     border-bottom: 5px solid #fff;
-    border: 1px solid #00249c;
+    border: 1px solid #2f4993;
     width: 100%;
     margin-bottom: 5px;
 }
@@ -20301,7 +20330,7 @@ h4 {
 }
 
 .services .library h4 {
-    background: #00249c;
+    background: #2f4993;
 }
 
 #departments .departmentSlug:hover,
@@ -20312,7 +20341,7 @@ h4 {
 .services .icon-box .icon {
     width: 64px;
     height: 64px;
-    background: #00249c;
+    background: #2f4993;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -20340,7 +20369,7 @@ h4 {
 }
 
 .services .icon-box h4 a {
-    color: #00249c;
+    color: #2f4993;
     text-decoration: none;
     transition: ease-in-out 0.3s;
 }
@@ -20407,14 +20436,14 @@ h4 {
 }
 
 .services .icon-box:hover h4 a {
-    color: #00249c;
+    color: #2f4993;
 }
 
 .carousel-content h3 {
     color: #fff;
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #00249c;
+    border-right: .15em solid #2f4993;
     /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
@@ -20453,7 +20482,7 @@ h4 {
     }
 
     100% {
-        border-color: #00249c
+        border-color: #2f4993
     }
 }
 
@@ -20543,7 +20572,7 @@ h4 {
     padding-bottom: 99999px;
     box-shadow: 0px 0px 1px 1px white;
     transition: 0.5s all ease;
-    border-bottom: 4px solid #00249c;
+    border-bottom: 4px solid #2f4993;
 }
 
 #blog-post .block :hover {
@@ -20576,7 +20605,7 @@ h4 {
 }
 
 #blog-post .content h4 a:hover {
-    color: #00249c;
+    color: #2f4993;
     text-decoration: none;
 }
 
@@ -20587,7 +20616,7 @@ h4 {
     top: -6px;
     width: 30px;
     height: 2px;
-    background-color: #00249c;
+    background-color: #2f4993;
     -webkit-transition: .3s all;
     -o-transition: .3s all;
     transition: .3s all;
@@ -20604,13 +20633,13 @@ h4 {
 }
 
 #blog-post .content .btn-read {
-    background: #00249c;
+    background: #2f4993;
     color: #fff;
     padding: 10px 20px;
     font-size: 13px;
     margin-top: 15px;
     border-radius: 25px;
-    border-bottom: 2px solid #00249c;
+    border-bottom: 2px solid #2f4993;
 }
 
 #blog-post .content .btn-read:hover {
@@ -20636,7 +20665,7 @@ h4 {
     content: '';
     width: 40px;
     height: 2px;
-    background: #00249c;
+    background: #2f4993;
     position: absolute;
     top: 12px;
     left: -60px;
@@ -20646,7 +20675,7 @@ h4 {
     content: '';
     width: 40px;
     height: 2px;
-    background: #00249c;
+    background: #2f4993;
     position: absolute;
     top: 12px;
     right: -60px;
@@ -20666,23 +20695,23 @@ h4 {
 }
 
 #blog .btn-read {
-    background: #00249c;
+    background: #2f4993;
     color: #fff;
     padding: 10px 30px;
     font-size: 13px;
     margin-top: 15px;
     border-radius: 25px;
-    border-bottom: 2px solid #00249c;
+    border-bottom: 2px solid #2f4993;
 }
 
 .trending-main .btn-read {
-    background: #00249c;
+    background: #2f4993;
     color: #fff;
     padding: 10px 30px;
     font-size: 13px;
     margin-top: 15px;
     border-radius: 25px;
-    border-bottom: 2px solid #00249c;
+    border-bottom: 2px solid #2f4993;
     font-weight: bold;
 }
 
@@ -20759,7 +20788,7 @@ h4 {
 }
 
 .social-profile a {
-    color: #00249c;
+    color: #2f4993;
     display: block;
 }
 
@@ -20768,7 +20797,7 @@ h4 {
 }
 
 .social-profile li a:hover {
-    color: #00249c;
+    color: #2f4993;
 }
 
 #testimonial .owl-pagination,
@@ -22499,12 +22528,17 @@ h4 {
 }
 
 .img-responsive {
-    max-width: 100%;
+    max-width: 90%;
     height: 100%;
 }
 
 #map {
-    background: white;
+    background: #2f4993;
+}
+
+#map .map{
+    width: 80%;
+    margin: auto;
 }
 
 #center {
@@ -22519,7 +22553,7 @@ h4 {
     border: none;
     transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 5px;
     min-height: 300px;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
 }
@@ -22559,7 +22593,7 @@ h4 {
 }
 
 #center .card.card-has-bg:hover {
-    transform: scale(0.98);
+    /* transform: scale(0.98); */
     box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
     background-size: 130%;
     transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -22616,6 +22650,10 @@ h4 {
     background: linear-gradient(0deg, rgba(35, 79, 109, 0.3785889356) 0%, #455f71 100%);
 }
 
+#center a:hover {
+    text-decoration: none;
+}
+
 #client-logo {
     padding: 100px 0 100px;
     text-align: center;
@@ -22633,7 +22671,6 @@ h4 {
 
 #client-logo a {
     padding: 14px 24px;
-    display: table-cell;
     vertical-align: middle;
 }
 
@@ -23033,8 +23070,8 @@ h4 {
 
 #portfolio .btn-primary {
     color: #fff;
-    background-color: #00249c;
-    border-color: #00249c;
+    background-color: #2f4993;
+    border-color: #2f4993;
 }
 
 #portfolio .btn-primary:hover {
@@ -23639,7 +23676,7 @@ h2.section-heading {
 }
 
 .caa_event {
-    background-color: #00249c;
+    background-color: #2f4993;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -23660,7 +23697,7 @@ h2.section-heading {
 }
 
 .lib-news {
-    background: #00249c;
+    background: #2f4993;
     text-align: left;
 }
 
@@ -23719,7 +23756,7 @@ h2.section-heading {
     padding-bottom: 99999px;
     box-shadow: 0px 0px 1px 1px white;
     transition: 0.5s all ease;
-    border-bottom: 4px solid #00249c;
+    border-bottom: 4px solid #2f4993;
 }
 
 /* #newBook .block :hover {
@@ -23756,7 +23793,7 @@ h2.section-heading {
 }
 
 #newBook .content h4 a:hover {
-    color: #00249c;
+    color: #2f4993;
     text-decoration: none;
 }
 
@@ -23767,7 +23804,7 @@ h2.section-heading {
     top: -6px;
     width: 30px;
     height: 2px;
-    background-color: #00249c;
+    background-color: #2f4993;
     -webkit-transition: .3s all;
     -o-transition: .3s all;
     transition: .3s all;
@@ -23783,13 +23820,13 @@ h2.section-heading {
 }
 
 #newBook .content .btn-read {
-    background: #00249c;
+    background: #2f4993;
     color: #fff;
     padding: 10px 20px;
     font-size: 13px;
     margin-top: 15px;
     border-radius: 25px;
-    border-bottom: 4px solid #00249c;
+    border-bottom: 4px solid #2f4993;
 }
 
 /* #newBook .content .btn-read:hover {
@@ -23815,7 +23852,7 @@ h2.section-heading {
     content: '';
     width: 40px;
     height: 2px;
-    background: #00249c;
+    background: #2f4993;
     position: absolute;
     top: 12px;
     left: -60px;
@@ -23825,7 +23862,7 @@ h2.section-heading {
     content: '';
     width: 40px;
     height: 2px;
-    background: #00249c;
+    background: #2f4993;
     position: absolute;
     top: 12px;
     right: -60px;
@@ -23845,13 +23882,13 @@ h2.section-heading {
 }
 
 #newBooks .btn-read {
-    background: #00249c;
+    background: #2f4993;
     color: #fff;
     padding: 10px 30px;
     font-size: 13px;
     margin-top: 15px;
     border-radius: 25px;
-    border-bottom: 4px solid #00249c;
+    border-bottom: 4px solid #2f4993;
 }
 
 #newBooks .btn-read:hover {
@@ -23871,16 +23908,20 @@ h2.section-heading {
 }
 
 .card-link .card-header::after {
-    /* color: white; */
-    content: "+";
+    content: "";
     position: absolute;
+    background-image: url("/assets/images/whiteArrowDown.svg");
+    background-size: contain; /* ensures the image scales properly */
+    background-repeat: no-repeat;
+    width: 1rem; /* Adjust size as needed */
+    height: 1rem; /* Adjust size as needed */
     right: 2%;
+    top: 25px; /* Vertically center the arrow */
+    transform: translateY(-50%); /* Adjust positioning */
     transition: transform var(--collapsible-transition-duration) var(--collapsible-transition-fn);
 }
 
-.card-link:not(.collapsed) .card-header::after {
-    content: "\2212";
-}
+
 
 .teacher_info_block {
     padding: 15px;
@@ -23919,7 +23960,7 @@ h2.section-heading {
 }
 
 .studentHouseBanner {
-    background-image: linear-gradient(rgba(8, 29, 99, 0.4), rgba(8, 29, 99, 0.8)), url(https://caa.edu.kz/assets/images/upload/WhatsApp%20Image%202022-10-19%20at%2014.10.17_1670490193.jpeg);
+    background-image: linear-gradient(rgba(8, 29, 99, 0.4), rgba(8, 29, 99, 0.8)), url(/assets/images/upload/WhatsApp%20Image%202022-10-19%20at%2014.10.17_1670490193.jpeg);
     height: 300px;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -23947,7 +23988,7 @@ h2.section-heading {
 }
 
 .medicalBanner {
-    background-image: linear-gradient(rgba(8, 29, 99, 0.0), rgba(8, 29, 99, 0.0)), url(https://caa.edu.kz/assets/images/upload/WhatsApp%20Image%202023-11-09%20at%2010.51.39_1699506843.jpeg);
+    background-image: linear-gradient(rgba(8, 29, 99, 0.0), rgba(8, 29, 99, 0.0)), url(/assets/images/upload/WhatsApp%20Image%202023-11-09%20at%2010.51.39_1699506843.jpeg);
     height: 500px;
     background-size: 70%;
     background-repeat: no-repeat;
@@ -24163,7 +24204,7 @@ h2.section-heading {
 
 
 .timeline {
-    border-left: 3px solid #00249c;
+    border-left: 3px solid #2f4993;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     background: rgba(114, 124, 245, 0.09);
@@ -24558,7 +24599,7 @@ h4 {
 }
 
 .trending-area .trending-main .trending-bottom .single-bottom .trend-bottom-cap h4 a {
-    color: #00249c;
+    color: #2f4993;
     text-decoration: none;
     font-weight: 500;
     line-height: 1.4
@@ -24708,7 +24749,7 @@ h4 {
 
 ​table, td {
     border-collapse: separate;
-    border: 1px solid #999;
+    border-color: #999;
     padding: 5px;
 }
 
@@ -24740,7 +24781,7 @@ h4 {
 
 .nav-pills .nav-link.active {
     color: #fff !important;
-    background-color:#00249c !important;
+    background-color:#2f4993 !important;
   }
 
 .centers-banner img{
@@ -24756,4 +24797,13 @@ h4 {
     background-position: center center;
 }
 
+#pages .btn-primary {
+    color: #fff;
+    background-color: #2f4993 ;
+    border-color: #2f4993;
+}
+
+.visually-hidden{
+    display: none;
+}
 

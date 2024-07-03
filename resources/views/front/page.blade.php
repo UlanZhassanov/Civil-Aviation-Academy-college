@@ -1,5 +1,7 @@
 @extends('front.layouts.app')
-@section('title')Академия Гражданской Авиации@endsection
+@section('title')
+{{ __('Авиационный колледж') }}
+@endsection
 @section('content')
     <section id="pages">
         <div class="container">

@@ -1,6 +1,6 @@
 @extends('front.layouts.app')
 @section('title')
-    Академия Гражданской Авиации
+{{ __('Авиационный колледж') }}
 @endsection
 @section('content')
     <section id="news">

@@ -4,30 +4,10 @@
                 <div class="footer__info">
                     <div class="info-block wow fadeInDown">
                         <h4>{{ __('Контакты') }}</h4>
-                        <p> {{ __('Приемная комиссия Академии:') }}<br />
-                            <a href="tel:87273469208"><i class="fa fa-phone-alt"></i> +7 (727) 346-92-08 (вн. 245)</a>
-                            <a href="tel:87073169281"><i class="fa fa-phone-alt"></i> +7 (707) 316-92-81</a>
-                            <a href="mailto:admissions@agakaz.kz"><i class="fa fa-envelope"></i> admissions@agakaz.kz</a><br />
-                            {{-- {{ __('Канцелярия:') }}<br />
-                            <a href="tel:87273469206">+7 (727) 346-92-06 (вн. 215)</a><br /> --}}
-                            {{-- {{ __('Лётно-тренажёрный центр') }}:<br />
-                            <a href="tel:87273469206">+7 (727) 346-92-06 (вн. 206)</a><br/>
-                            {{ __('Военная кафедра') }}:<br />
-                            <a href="tel:87273469206">+7 (727) 346-92-06 (вн. 256)</a><br/> --}}
-                            {{ __('Центр обслуживания студентов:') }}<br />
-                            <a href="tel:87273399929"><i class="fa fa-phone-alt"></i> +7 (727) 339-99-29</a>
-                            <a href="mailto:sscenter@agakaz.kz"><i class="fa fa-envelope"></i> sscenter@agakaz.kz</a><br />
-                            {{ __('Колл-центр Академии:') }}<br />
-                            <a href="tel:87020244512"><i class="fa fa-phone-alt"></i> +7 (702) 024-45-12</a>
-                            <a href="mailto:info@agakaz.kz"><i class="fa fa-envelope"></i> info@agakaz.kz</a><br />
+                        <p>
                             {{ __('Колл-центр Колледжа:') }}<br />
                             <a href="tel:87273469206"><i class="fa fa-phone-alt"></i> +7 (727) 346-92-06 (вн. 253)</a>
                             <a href="tel:87478198730"><i class="fa fa-phone-alt"></i> +7 (747) 819-87-30 (whatsapp)</a><br />
-
-
-                            {{ __('Канцелярия') }}<br />
-                            <a href="tel:+77273469206"><i class="fa fa-phone-alt"></i> +7 (727) 346-92-06 (вн. 215)</a>
-                            <a href="mailto:office@agakaz.kz"><i class="fa fa-envelope"></i> office@agakaz.kz</a><br />
 
                             {{ __('ул. Закарпатская, 44') }}
                             {{ __('050039, Алматы') }} <br />
@@ -35,18 +15,16 @@
                         </p>
                     </div>
                     <div class="info-block wow fadeInUp">
-                        <h4>{{ __('Об Академии') }}</h4>
-                        <a href="/rukovodstvo">{{ __('Руководство') }}</a>
-                        <a href="/korporativnoe-upravlenie">{{ __('Корпоративное управление') }}</a>
-                        <a href="/uchenyy-sovet">{{ __('Учёный совет') }}</a>
-                        <a href="/nauka-i-cifrovizaciya">{{ __('Наука и цифровизация') }}</a>
+                        <h4>{{ __('О колледже') }}</h4>
+                        <a href="/administraciya-kolledzha-236">{{ __('Управление') }}</a>
+                        <a href="/normativnye-dokumenty-344">{{ __('Нормативные документы') }}</a>
+                        <a href="/attestaciya-339">{{ __('Аттестация') }}</a>
+                        <a href="/mezhdunarodnoe-sotrudnichestvo-408">{{ __('Сотрудничество') }}</a>
                     </div>
                     <div class="info-block wow fadeInDown">
                         <h4>{{ __('Поступление') }}</h4>
-                        <a href="/obrazovatelnye-programmy-na-bakalavriat">{{ __('Бакалавриат') }}</a>
-                        <a href="/obrazovatelnye-programmy-na-magistraturu-187">{{ __('Магистратура') }}</a>
-                        <a href="/obrazovatelnye-programmy-na-doktoranturu-189">{{ __('Докторантура') }}</a>
-                        <a href="/o-kolledzhe-192">{{ __('Колледж') }}</a>
+                        <a href="/priemnaya-komissiya-242">{{ __('Правила поступления') }}</a>
+                        <a href="/priemnaya-komissiya-242">{{ __('Приемная комиссия') }}</a>
                     </div>
                     <div class="info-block last wow fadeInUp">
                         <h4>{{ __('Присоединяйтесь') }}</h4>
@@ -75,7 +53,7 @@
         <div class="container">
             <div class="bottom-bar">
                 <p style="font-size: 0.85vw; font-weight: lighter;">
-                    © 1995 - <?php echo date("Y"); ?> {{ __('Академия Гражданской Авиации') }}</p>
+                    © <?php echo date("Y"); ?> {{ __('Авиационный колледж') }}</p>
             </div>
         </div>
     </section>

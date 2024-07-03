@@ -1,6 +1,6 @@
 @extends('front.layouts.app')
 @section('title')
-    {{ __('Академия Гражданской Авиации') }}
+    {{ __('Авиационный колледж') }}
 @endsection
 @section('content')
 <section class="wrapper" id="center">

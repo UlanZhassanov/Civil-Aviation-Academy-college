@@ -9,11 +9,6 @@
 								 		 {{ __('Контакты') }}
 							  		 </a>
                         </div>
-                        <div>
-                            <a href="/virtualnaya-priemnaya-komissiya-174" target="_blank">
-                                <i class="far fa-comments"></i> Общественная приемная
-                            </a>
-                        </div>
                     </div>
                     <div class="top-bar__right">
                         <div class="lang" id="lang">
