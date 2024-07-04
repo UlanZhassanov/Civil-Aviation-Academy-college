@@ -126,7 +126,7 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 wow fadeInUp">
                     <div class="icon-box">
                         <div class="icon"><i class="fa fa-id-card"></i></div>
-                        <h4><a href="/virtualnaya-priemnaya-komissiya-174"
+                        <h4><a href="#"
                                 class="stretched-link">{{ __('Виртуальная общественная приемная - Open College') }}</a></h4>
                         <p>{{ __('В данном разделе обучающиеся, преподаватели и сотрудники Академии могут обратиться и задать интересующие их вопросы, поделиться новыми идеями и предложениями') }}
                         </p>
@@ -136,7 +136,7 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 wow fadeInUp">
                     <div class="icon-box">
                         <div class="icon"><i class="fa fa-book"></i></div>
-                        <h4><a href="/library" class="stretched-link">{{ __('Библиотека') }}</a></h4>
+                        <h4><a href="https://caa.edu.kz/library" class="stretched-link">{{ __('Библиотека') }}</a></h4>
                         <p>{{ __('Распределенная информационная система, позволяющая надежно сохранять и эффективно использовать разнородные коллекции электронных документов.') }}
                         </p>
                     </div>
@@ -154,7 +154,7 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 wow fadeInUp">
                     <div class="icon-box">
                         <div class="icon"><i class="fa fa-graduation-cap"></i></div>
-                        <h4><a href="https://moodle.agakaz.kz/" class="stretched-link">Classroom</a></h4>
+                        <h4><a href="#" class="stretched-link">Classroom</a></h4>
                         <p>{{ __('Веб-система для организации дистанционного обучения и управления им.') }}</p>
                     </div>
                 </div>
