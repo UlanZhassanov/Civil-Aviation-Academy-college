@@ -29,18 +29,12 @@
                     <div class="info-block last wow fadeInUp">
                         <h4>{{ __('Присоединяйтесь') }}</h4>
                         <div class="d-flex flex-row">
-                            <a href="https://www.instagram.com/agakaz_almaty"><img style="height: 33px; width: auto; margin: 3px;"
+                            <a href="https://www.instagram.com/aviation_college"><img style="height: 33px; width: auto; margin: 3px;"
                                     src="/assets/images/footer_social/insta.png" /></a>
-                            <a href="https://www.youtube.com/@civilaviationacademy"><img style="height: 33px; width: auto; margin: 3px;"
-                                    src="/assets/images/footer_social/youtube.png" /></a>
-                            <a href="https://www.facebook.com/agakaz2019/"><img style="height: 33px; width: auto; margin: 3px;"
+                            <a href="https://www.facebook.com/profile.php?id=100092758536650&mibextid=LQQJ4d"><img style="height: 33px; width: auto; margin: 3px;"
                                     src="/assets/images/footer_social/facebook.png" /></a>
-                            <a href="https://www.tiktok.com/@agakaz_almaty"><img style="height: 33px; width: auto; margin: 3px;"
+                            <a href="https://www.tiktok.com/@aviation_college"><img style="height: 33px; width: auto; margin: 3px;"
                                     src="/assets/images/footer_social/tiktok.png" /></a>
-                            <a href="https://t.me/civilaviationacademy"><img style="height: 33px; width: auto; margin: 3px;"
-                                    src="/assets/images/footer_social/telegram.png" /></a>
-                            <a href="https://wa.me/+77020244512"><img style="height: 33px; width: auto; margin: 3px;"
-                                    src="/assets/images/footer_social/whatsapp.png" /></a>
                         </div>
                         <!-- Go to www.addthis.com/dashboard to customize your tools -->
                         <div class="addthis_inline_follow_toolbox last"></div>
