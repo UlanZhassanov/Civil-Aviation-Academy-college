@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <title>
-        Академия Гражданской Авиации
+        Авиационный колледж
         </title><!-- Behavioral Meta Data -->
         <meta content="yes" name="apple-mobile-web-app-capable">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"><!-- Core Meta Data -->
@@ -70,7 +70,7 @@
                     <img alt="sphere" width="10%" src="/welcome/images/sphere.png">
                     <div class="title">
                         <h2>
-                            Академия Гражданской Авиации
+                            Авиационный колледж
                         </h2>
                         <span class="line"></span>
                         <p class="sub-title">

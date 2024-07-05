@@ -9,7 +9,7 @@ $worker_permission = unserialize($worker_permission->permission);
     <div class="left-sidebar__logo">
         <a href="/admin">
             <img src="/assets/images/logo-admin.png" alt="">
-            <span>Академия Гражданской Авиации</span>
+            <span>Авиационный колледж</span>
         </a>
     </div>
     <nav class="left-sidebar__nav">

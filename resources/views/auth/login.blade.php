@@ -3,7 +3,7 @@
     <section id="login">
         <div class="login">
             <div class="login__logo">
-                <img src="/assets/images/logo.png" height="90px" />
+                <img src="/assets/images/aga_colledge(without_blue_background).png" height="90px" />
             </div>
             <h1>Авторизация</h1>
             @error('iin_or_passport_number')
