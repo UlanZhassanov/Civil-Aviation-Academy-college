@@ -96,13 +96,26 @@ class PageController extends Controller
 
             $request->file('upload')->move(public_path('assets/images/upload'), $fileName);
 
-            $CKEditorFuncNum = $request->input('CKEditorFuncNum');
             $url = asset('assets/images/upload/' . $fileName);
-            $msg = 'Image uploaded successfully';
-            $response = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
 
-            @header('Content-type: text/html; charset=utf-8');
-            echo $response;
+            // Check if the request has CKEditorFuncNum (for 'Upload to server' button)
+            if ($request->has('CKEditorFuncNum')) {
+                $CKEditorFuncNum = $request->input('CKEditorFuncNum');
+                $msg = 'Image uploaded successfully';
+                $response = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg');</script>";
+
+                // Return JavaScript response
+                @header('Content-type: text/html; charset=utf-8');
+                echo $response;
+                return;
+            }
+
+            // Otherwise, return JSON response for clipboard uploads
+            return response()->json([
+                'uploaded' => 1,
+                'fileName' => $fileName,
+                'url' => $url
+            ]);
         }
     }
 
