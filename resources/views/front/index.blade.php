@@ -192,7 +192,7 @@
                             @if ($loop->first)
                                 <div class="trending-top mb-30">
                                     <div class="trend-top-img"
-                                        style="background-image: url('https://caa.edu.kz/storage/news/{!! $bg_imagess !!}')">
+                                        style="background-image: url('https://college.caa.edu.kz/storage/news/{!! $bg_imagess !!}')">
                                         {{-- <img src="https://caa.edu.kz/storage/news/{!! $bg_imagess !!}" alt=""> --}}
                                         <div class="trend-top-cap">
                                             <h2><a href="{{ route('front.news.show', $item->slug) }}">

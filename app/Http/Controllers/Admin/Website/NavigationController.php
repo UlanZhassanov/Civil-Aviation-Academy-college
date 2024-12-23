@@ -143,6 +143,7 @@ class NavigationController extends Controller
 		$worker_permission = unserialize($worker_permission->permission);
 		if (isset($worker_permission->navigation->delete) && $worker_permission->navigation->delete == true) {
 			Navigation::where('id', $navigation->id)->delete();
+			Navigation::where('parrent_id', $navigation->id)->delete();
 			return redirect()->back();
 		} else {
 			return abort('403', 'У вас нет доступа на это действие');
