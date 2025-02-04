@@ -275,7 +275,8 @@
     <section id="counter" class="parallax-section">
         <div class="container">
             <div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
-                <h2 class="text-white">{{ __('Авиационный колледж') }}<br>в цифрах</h2>
+                <h2 class="text-white">{{ __('Авиационный колледж') }}
+                    <br>{{ __('в цифрах') }}</br></h2>
                 <div class="devider"><i class="fa fa-plane fa-3x"></i></div>
             </div>
             <div class="row">
@@ -286,7 +287,15 @@
                             <span>215</span>
                         </div>
                         <i class="fa fa-graduation-cap fa-3x"></i>
-                        <h3>Выпускников</h3>
+                        <h3>
+                            @if (Config::get('app.locale') === 'ru')
+                            Выпускников
+                            @elseif(Config::get('app.locale') === 'kk')
+                            Түлектер
+                            @else
+                            Graduates
+                            @endif
+                        </h3>
                         <br>
                     </div>
                 </div>
@@ -301,7 +310,15 @@
                             <span>%</span>
                         </div>
                         <i class="fa fa-thumbs-up fa-3x"></i>
-                        <h3>Трудоустроенных <br> Выпускников</h3>
+                        <h3>
+                            @if (Config::get('app.locale') === 'ru')
+                            Трудоустроенных <br> Выпускников
+                            @elseif(Config::get('app.locale') === 'kk')
+                            Жұмысқа орналастырылған <br> түлектер
+                            @else
+                            Employed <br> Graduates
+                            @endif
+                        </h3>
 
                     </div>
                 </div>
@@ -315,7 +332,15 @@
                             <span>3</span>
                         </div>
                         <i class="fa fa-book fa-3x"></i>
-                        <h3>Образовательных <br> программ</h3>
+                        <h3>
+                            @if (Config::get('app.locale') === 'ru')
+                            Образовательных <br> программ
+                            @elseif(Config::get('app.locale') === 'kk')
+                            Білім беру <br> бағдарламалары
+                            @else
+                            Educational <br> programs
+                            @endif
+                        </h3>
                     </div>
                 </div>
                 <!-- end fourth count item -->
@@ -323,10 +348,18 @@
                     data-wow-delay="200ms">
                     <div class="counters-item">
                         <div>
-                            <span>69</span>
+                            <span>71</span>
                         </div>
                         <i class="fa fa-check-square fa-3x"></i>
-                        <h3>Преподавателей</h3>
+                        <h3>
+                            @if (Config::get('app.locale') === 'ru')
+                            Преподавателей
+                            @elseif(Config::get('app.locale') === 'kk')
+                            Оқытушылар
+                            @else
+                            Teachers
+                            @endif
+                        </h3>
                         <br>
                     </div>
                 </div>
@@ -339,7 +372,7 @@
     <section id="client-logo">
         <div class="container">
             <div class="title text-center wow animated zoomInDown">
-                <h2>Наши <span class="color">Партнеры</span></h2>
+                <h2>{{ __('Наши') }} <span class="color">{{ __('Партнеры') }}</span></h2>
                 <div class="border"></div>
             </div>
             <div class="row">
