@@ -116,25 +116,6 @@
 
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 wow fadeInUp">
                     <div class="icon-box">
-                        <div class="icon"><i class="fa fa-user-plus"></i></div>
-                        <h4><a href="#" class="stretched-link">{{ __('Онлайн регистрация абитуриентов') }}</a></h4>
-                        <p>{{ __('Онлайн-регистрация на программы бакалавриата, магистратуры и докторантуры открыта круглый год, что является преимуществом и упрощает подачу заявления.') }}
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 wow fadeInUp">
-                    <div class="icon-box">
-                        <div class="icon"><i class="fa fa-id-card"></i></div>
-                        <h4><a href="#"
-                                class="stretched-link">{{ __('Виртуальная общественная приемная - Open College') }}</a></h4>
-                        <p>{{ __('В данном разделе обучающиеся, преподаватели и сотрудники Академии могут обратиться и задать интересующие их вопросы, поделиться новыми идеями и предложениями') }}
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 wow fadeInUp">
-                    <div class="icon-box">
                         <div class="icon"><i class="fa fa-book"></i></div>
                         <h4><a href="https://caa.edu.kz/library" class="stretched-link">{{ __('Библиотека') }}</a></h4>
                         <p>{{ __('Распределенная информационная система, позволяющая надежно сохранять и эффективно использовать разнородные коллекции электронных документов.') }}
@@ -142,14 +123,6 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 wow fadeInUp">
-                    <div class="icon-box">
-                        <div class="icon"><i class="fa fa-credit-card"></i></div>
-                        <h4><a href="/bezkomissionnaya-onlayn-oplata-za-obuchenie"
-                                class="stretched-link">{{ __('Онлайн оплата') }}</a></h4>
-                        <p>{{ __('Безкомиссионная онлайн оплата за обучение. Инструкция для оплаты за обучение.') }}</p>
-                    </div>
-                </div>
 
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 wow fadeInUp">
                     <div class="icon-box">
