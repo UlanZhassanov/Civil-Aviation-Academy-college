@@ -257,7 +257,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
                     <div class="counters-item">
                         <div>
-                            <span>215</span>
+                            <span>289</span>
                         </div>
                         <i class="fa fa-graduation-cap fa-3x"></i>
                         <h3>
@@ -279,7 +279,7 @@
                     data-wow-delay="200ms">
                     <div class="counters-item">
                         <div>
-                            <span>93</span>
+                            <span>94</span>
                             <span>%</span>
                         </div>
                         <i class="fa fa-thumbs-up fa-3x"></i>
@@ -321,7 +321,7 @@
                     data-wow-delay="200ms">
                     <div class="counters-item">
                         <div>
-                            <span>71</span>
+                            <span>72</span>
                         </div>
                         <i class="fa fa-check-square fa-3x"></i>
                         <h3>
