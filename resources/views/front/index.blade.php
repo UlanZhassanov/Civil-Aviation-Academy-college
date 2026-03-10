@@ -266,7 +266,7 @@
                             @elseif(Config::get('app.locale') === 'kk')
                             Түлектер
                             @else
-                            Graduates
+                            Graduatessss
                             @endif
                         </h3>
                         <br>
