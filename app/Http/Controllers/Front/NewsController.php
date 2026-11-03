@@ -20,9 +20,18 @@ class NewsController extends Controller
 	{
 		$tree = Navigation::tree();
 		$data = News::where('compliance', 0)->where('slug', $slug)->first();
-		if(isset($data->more_images)){
-			$more_images = unserialize($data->more_images);
-		}
-		return view('front.news.show', compact('tree', 'data', 'more_images'));
+		$titles = $data ? $data->decodeSerialized($data->titles, 'titles') : null;
+		$descriptions = $data ? $data->decodeSerialized($data->descriptions, 'descriptions') : null;
+		$bg_images = $data ? $data->decodeSerialized($data->bg_images, 'bg_images') : null;
+		$more_images = $data ? ($data->decodeSerialized($data->more_images, 'more_images') ?: []) : [];
+
+		return view('front.news.show', compact(
+			'tree',
+			'data',
+			'titles',
+			'descriptions',
+			'bg_images',
+			'more_images'
+		));
 	}
 }

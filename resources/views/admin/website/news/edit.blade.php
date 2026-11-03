@@ -30,16 +30,16 @@
                     <div id="ru-block">
                         <div class="mb-4">
                             <label class="font-weight-bold">Название</label>
-                            <input type="text" name="title_ru" value="{!! unserialize($news->titles)->ru !!}" class="form-control"
+                            <input type="text" name="title_ru" value="{!! $titles->ru ?? '' !!}" class="form-control"
                                 required />
                         </div>
                         <div class="mb-4">
                             <label class="font-weight-bold">Описание</label>
-                            <textarea name="desc_ru" id="editor-ru" class="form-control" required >{!! unserialize($news->descriptions)->ru !!}</textarea>
+                            <textarea name="desc_ru" id="editor-ru" class="form-control" required >{!! $descriptions->ru ?? '' !!}</textarea>
                         </div>
                         <div class="mb-4">
                             <label class="font-weight-bold d-block">Фоновое изображение</label>
-                            <img src="/storage/news/{!! unserialize($news->bg_images)->ru !!}" class="mb-2" alt="" width="200"
+                            <img src="/storage/news/{!! $bg_images->ru ?? '' !!}" class="mb-2" alt="" width="200"
                                 height="150">
                         </div>
                         <div class="mb-4">
@@ -50,16 +50,16 @@
                     <div id="kk-block" style="display: none">
                         <div class="mb-4">
                             <label class="font-weight-bold">Аты</label>
-                            <input type="text" name="title_kk" value="{!! unserialize($news->titles)->kk !!}" class="form-control" required >
+                            <input type="text" name="title_kk" value="{!! $titles->kk ?? '' !!}" class="form-control" required >
                         </div>
                         <div class="mb-4">
                             <label class="font-weight-bold">Сипаттамасы</label>
-                            <textarea name="desc_kk" id="editor-kz" class="form-control">{!! unserialize($news->descriptions)->kk !!}</textarea>
+                            <textarea name="desc_kk" id="editor-kz" class="form-control">{!! $descriptions->kk ?? '' !!}</textarea>
                         </div>
                         <div class="mb-4">
                             <label class="font-weight-bold d-block">Фондық сурет</label>
-                            @if (!empty(unserialize($news->bg_images)->kk))
-                                <img src="/storage/news/{!! unserialize($news->bg_images)->kk !!}" class="mb-2" alt="" width="200"
+                            @if (!empty($bg_images->kk ?? null))
+                                <img src="/storage/news/{!! $bg_images->kk !!}" class="mb-2" alt="" width="200"
                                     height="150">
                             @endif
                         </div>
@@ -71,16 +71,16 @@
                     <div id="en-block" style="display: none">
                         <div class="mb-4">
                             <label class="font-weight-bold">Title</label>
-                            <input type="text" name="title_en" value="{!! unserialize($news->titles)->en !!}" class="form-control" required >
+                            <input type="text" name="title_en" value="{!! $titles->en ?? '' !!}" class="form-control" required >
                         </div>
                         <div class="mb-4">
                             <label class="font-weight-bold">Description</label>
-                            <textarea name="desc_en" id="editor-en" class="form-control">{!! unserialize($news->descriptions)->en !!}</textarea>
+                            <textarea name="desc_en" id="editor-en" class="form-control">{!! $descriptions->en ?? '' !!}</textarea>
                         </div>
                         <div class="mb-4">
                             <label class="font-weight-bold d-block">Background image</label>
-                            @if (!empty(unserialize($news->bg_images)->en))
-                                <img src="/storage/news/{!! unserialize($news->bg_images)->en !!}" class="mb-2" alt="" width="200"
+                            @if (!empty($bg_images->en ?? null))
+                                <img src="/storage/news/{!! $bg_images->en !!}" class="mb-2" alt="" width="200"
                                     height="150">
                             @endif
                         </div>
@@ -94,7 +94,7 @@
                         <div>
                             <label class="font-weight-bold">Дополнительные изображения</label>
                             <div class="d-flex flex-wrap">
-                                @foreach (unserialize($news->more_images) as $item)
+                                @foreach ($more_images as $item)
                                     <div class="col-md-2 mb-3 p-0">
                                         <img src="/storage/news/{!! $item !!}" class="pl-2 pr-2" alt=""
                                             width="100%" height="150">

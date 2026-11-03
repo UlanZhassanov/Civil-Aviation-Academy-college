@@ -36,20 +36,24 @@
             </div>
             <div class="news">
                 @foreach ($data as $item)
+                    @php
+                        $itemTitles = $item->decodeSerialized($item->titles, 'titles');
+                        $itemBgImages = $item->decodeSerialized($item->bg_images, 'bg_images');
+                    @endphp
                     <div class="news__preview">
                         <a href="{{ route('front.news.show', $item->slug) }}">
-                            <img src="/storage/news/@if (Config::get('app.locale') === 'ru'){!! unserialize($item->bg_images)->ru !!}@elseif(Config::get('app.locale') === 'kk')@if(empty(unserialize($item->bg_images)->kk)){!! unserialize($item->bg_images)->ru !!}@else{!! unserialize($item->bg_images)->kk !!}@endif @elseif(Config::get('app.locale') === 'en')@if(empty(unserialize($item->bg_images)->en)){!! unserialize($item->bg_images)->ru !!}@else{!! unserialize($item->bg_images)->en !!}@endif @endif" />
+                            <img src="/storage/news/@if (Config::get('app.locale') === 'ru'){!! $itemBgImages->ru ?? '' !!}@elseif(Config::get('app.locale') === 'kk')@if(empty($itemBgImages->kk ?? null)){!! $itemBgImages->ru ?? '' !!}@else{!! $itemBgImages->kk !!}@endif @elseif(Config::get('app.locale') === 'en')@if(empty($itemBgImages->en ?? null)){!! $itemBgImages->ru ?? '' !!}@else{!! $itemBgImages->en !!}@endif @endif" />
                         </a>
                             <div class="content">
                             <div class="content-title">
                             <h4>
                                 <a href="{{ route('front.news.show', $item->slug) }}">
                                     @if (Config::get('app.locale') === 'ru')
-                                        {!! unserialize($item->titles)->ru !!}
+                                        {!! $itemTitles->ru ?? '' !!}
                                     @elseif(Config::get('app.locale') === 'kk')
-                                        {!! unserialize($item->titles)->kk !!}
+                                        {!! $itemTitles->kk ?? '' !!}
                                     @else
-                                        {!! unserialize($item->titles)->en !!}
+                                        {!! $itemTitles->en ?? '' !!}
                                     @endif
                                 </a>
                             </h4>

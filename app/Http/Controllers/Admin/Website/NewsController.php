@@ -209,7 +209,17 @@ class NewsController extends Controller
 	public function edit($id)
 	{
 		$news = News::find($id);
-		return view('admin.website.news.edit', compact('news'));
+		$titles = $news->decodeSerialized($news->titles, 'titles');
+		$descriptions = $news->decodeSerialized($news->descriptions, 'descriptions');
+		$bg_images = $news->decodeSerialized($news->bg_images, 'bg_images');
+		$more_images = $news->decodeSerialized($news->more_images, 'more_images') ?: [];
+		return view('admin.website.news.edit', compact(
+			'news',
+			'titles',
+			'descriptions',
+			'bg_images',
+			'more_images'
+		));
 	}
 
 	/**
@@ -242,7 +252,7 @@ class NewsController extends Controller
 		$news = News::find($id);
 
 		// Delete Bg Images
-		$oldBgImages = unserialize($news->bg_images);
+		$oldBgImages = $news->decodeSerialized($news->bg_images, 'bg_images');
 		$oldBgImages = (array) $oldBgImages;
 
 		foreach ($bg_images as $k => $v) {
@@ -319,8 +329,8 @@ class NewsController extends Controller
 	public function destroy($id)
 	{
 		$news = News::find($id);
-		$bg_images = unserialize($news->bg_images);
-		$more_images = unserialize($news->more_images);
+		$bg_images = $news->decodeSerialized($news->bg_images, 'bg_images');
+		$more_images = $news->decodeSerialized($news->more_images, 'more_images');
 		if (!empty($bg_images)) {
 			foreach ($bg_images as $bg_image) {
 				File::delete(public_path('/storage/news/' . $bg_image));

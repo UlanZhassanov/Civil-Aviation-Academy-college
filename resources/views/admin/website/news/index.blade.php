@@ -28,7 +28,7 @@
                 </div>
                 @foreach ($news as $item)
                     <div class="pages__page">
-                        <p style="width: 50%">{!! unserialize($item->titles)->ru !!}
+                        <p style="width: 50%">{!! $item->decodeSerialized($item->titles, 'titles')->ru ?? '' !!}
                             @if($item->compliance === 1)
                             <span class="btn-danger">compliance</span>
                             @endif
